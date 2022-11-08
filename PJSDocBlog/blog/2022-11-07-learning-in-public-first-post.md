@@ -4,13 +4,13 @@ title: First Time For Everything
 description: This site includes my public docs, portfolio, and published content. This primary purpose of this website is to help myself and other web developers to learn, build and publish teachable content to assist in the learning process while adding value and inspiring others to do the same.
 authors:
   - name: Patrick John Stevens
-    title: Web Developer learning, building, and publishing for the Glory of God!
+    title: Web Developer learning, building, and publishing. I'm here to serve.
     url: https://github.com/patrickjohnstevens
     image_url: https://github.com/patrickjohnstevens.png
 tags: [starting]
 ---
 
-This is built using Docusourus. This site includes my public docs, portfolio, and published content.
+This is built using Docusourus. This site contains the public docs, portfolio, links, and published content for myself, Patrick John Stevens.
 
 ### About Me
 
