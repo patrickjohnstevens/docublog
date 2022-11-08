@@ -1,0 +1,78 @@
+---
+slug: what-is-mdx
+title: What is MDX?
+authors:
+  - name: Patrick John Stevens
+    title: Child of God
+    url: https://github.com/patrickjohnstevens
+    image_url: https://github.com/patrickjohnstevens.png
+tags: [mdx]
+---
+
+### What is MDX?
+
+MDX is Markdown + JS (JSX more specifically). You can learn all the details here: [MDX](https://mdxjs.com/). It has an article that will show you how to use markdown, JSX, JavaScript expressions, and import and export statements in ESM inside MDX files within Docusaurus. You can import components, such as interactive charts or alerts, and embed them within your content. This makes writing long-form content with components a blast. 🚀
+
+:::tip tip callout section
+
+Create a Lightbulb Icon with Green Box Callout by adding the following to it's own line in your MDX file by adding ":::tip `any word or nothting`" to it's own line in your MDX file.
+
+:::
+
+:::tip DID YOU KNOW
+
+MDX alows you to use the power of React to create interactive blog posts.
+
+:::
+
+:::tip Check out this JSX within this callout and MDX file!
+
+This gives you the power of React and components to create interactive blog posts.
+
+```js
+<button onClick={() => alert("button clicked!")}>Click me!</button>
+```
+
+<button onClick={() => alert("button clicked!")}>Click me!</button>
+
+:::
+
+### Markdown features also work with MDX
+
+<blockquote>
+  <p>
+    A blockquote with <em>some</em>emphasis.
+  </p>
+</blockquote>
+
+## Markdown Headings (H2)
+
+# H1 Info
+
+This is a Heading 1. This H1 does not rank above the meta title that is auto added to the left and right sidebar in rank 1.
+
+### H3 Info
+
+This is a Heading 3. This H3 creates a title and link in order of the other H1 and H2's on the right sidebar. It also indents it slightly. This helps from a visual and accessibility standpoing.
+
+#### H4
+
+##### H5
+
+###### H6
+
+H4, H5, and H6 headings do not show up in the right sidebar but they do follow their associated styling and help with symantic markdown.
+
+- Unordered
+- List
+
+1. Ordered
+2. List
+
+A paragraph, introducing a thematic break:
+
+---
+
+```js
+some.code();
+```
