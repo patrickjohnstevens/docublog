@@ -1,41 +1,15 @@
-# Website
+# About
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This is built using Docusourus. This site includes my public docs, portfolio, and published content.
 
-### Installation
+### About Me
 
-```
-$ yarn
-```
+**My name is Patrick John Stevens.**
 
-### Local Development
+### Statement of Purpose
 
-```
-$ yarn start
-```
+The primary purpose of this website is to help myself and other developers to **learn**, **build** and **publish*** teachable content to assist in the learning process while adding value and inspiring others to do the same.
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+### The Learn-Build-Publish Principles
 
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+This website was inspired by the ideas of Learn In Public made popular by <a href="https://twitter.com/swyx" target="_blank">@swyx</a> and many of the awesome developers and teachers across the world who learn, build, teach, and publish content for others to learn and grow from.

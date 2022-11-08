@@ -10,7 +10,7 @@ authors:
 tags: [starting]
 ---
 
-This is built using Docusourus.  This site includes my public docs, portfolio, and published content.
+This is built using Docusourus. This site includes my public docs, portfolio, and published content.
 
 ### About Me
 
