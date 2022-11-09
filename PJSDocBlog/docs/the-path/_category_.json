@@ -1,6 +1,5 @@
 {
-  "label": "Articles",
-  "position": 2,
+  "label": "Learning Journey",
   "link": {
     "type": "generated-index"
   }

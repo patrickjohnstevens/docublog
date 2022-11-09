@@ -1,6 +1,6 @@
 {
-  "label": "Articles",
-  "position": 2,
+  "label": "How to",
+  "position": 1,
   "link": {
     "type": "generated-index"
   }

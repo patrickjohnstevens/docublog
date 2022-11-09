@@ -65,7 +65,7 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "intro",
+            docId: "overview",
             position: "left",
             label: "Docs",
           },
@@ -84,8 +84,8 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: "Docs",
+                to: "/docs/overview",
               },
             ],
           },
@@ -94,15 +94,15 @@ const config = {
             items: [
               {
                 label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                href: "#",
               },
               {
                 label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                href: "#",
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                href: "#",
               },
             ],
           },
@@ -115,7 +115,7 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/patrickjohnstevens/docublog",
               },
             ],
           },

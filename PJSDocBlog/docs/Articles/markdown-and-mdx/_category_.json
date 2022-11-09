@@ -1,6 +1,5 @@
 {
-  "label": "Articles",
-  "position": 2,
+  "label": "Markdown and MDX",
   "link": {
     "type": "generated-index"
   }
