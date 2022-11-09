@@ -1,10 +1,8 @@
 ---
-sidebar_position: 7
+sidebar_position: 1
 ---
 
-# intro.md breaks site on deletion
-
-I bet it has something to do with it being the default page when clicking docs. I don't know where that is programmed.
+# Tutorials
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
