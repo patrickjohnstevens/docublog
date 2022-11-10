@@ -10,11 +10,7 @@ authors:
 tags: [starting]
 ---
 
-This is built using Docusourus. This site contains the public docs, portfolio, links, and published content for myself, Patrick John Stevens.
-
-### About Me
-
-**My name is Patrick John Stevens.**
+This is built using Docusaurus 2.0. This site contains the public docs, portfolio, links, and published content for myself, Patrick John Stevens.
 
 ### Statement of Purpose
 
