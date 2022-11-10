@@ -14,11 +14,13 @@ This is built using Docusaurus 2.0. This site contains the public docs, portfoli
 
 ### Statement of Purpose
 
-The primary purpose of this website is to help myself and other developers to **learn**, **build** and **publish*** teachable content to assist in the learning process while adding value and inspiring others to do the same.
+The primary purpose of this website is to help myself and other developers to **learn**, **build** and **teach** content to assist in the learning process while adding value and inspiring others to do the same.
 
-### The Learn-Build-Publish Principles
+### The Learn (in public) Build-Teach Principles
 
 This website was inspired by the ideas of Learn In Public made popular by <a href="https://twitter.com/swyx" target="_blank">@swyx</a> and many of the awesome developers and teachers across the world who learn, build, teach, and publish content for others to learn and grow from.
+
+Shawn Wang / swxy has inspired me to build this site. The primary goal with this site is to learn, build and teach in public. He gave me the idea to build a persistent knowledge base that grows over time and simply Open Source my knowledge! My hope is that at every step of the way I will document what I've done and the problems you solved.
 
 ### Why choose Docusaurus for this website?
 

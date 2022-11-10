@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Patrick John Stevens",
-  tagline: "Learn. Build. Publish.",
+  tagline: "Learn. Build. Teach.",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -59,7 +59,7 @@ const config = {
       navbar: {
         title: "Patrick John Stevens | Web Developer",
         logo: {
-          alt: "Patrick John Stevens Logo",
+          alt: "Patrick John Stevens Lightbulb Logo",
           src: "img/Patrick-John-Stevens_logo_lightbulb.svg",
         },
         items: [
