@@ -37,15 +37,15 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/patrickjohnstevens/docublog/tree/main/PJSDocBlog/docs",
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
+        // blog: {
+        //   showReadingTime: true,
+        // Please change this to your repo.
+        // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     "#",
+        // },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -57,7 +57,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Patrick John Stevens | Web Developer",
+        title: "Patrick John Stevens",
         logo: {
           alt: "Patrick John Stevens Lightbulb Logo",
           src: "img/Patrick-John-Stevens_logo_lightbulb.svg",
@@ -66,15 +66,15 @@ const config = {
           {
             type: "doc",
             docId: "overview",
-            position: "left",
-            label: "Docs",
+            position: "right",
+            label: "Knowledge Hub ",
           },
           //{ to: "/blog", label: "Blog", position: "left" },
-          {
-            href: "https://www.linkedin.com/in/patrickjohnstevens/",
-            label: "LinkedIn",
-            position: "right",
-          },
+          // {
+          //   href: "https://www.linkedin.com/in/patrickjohnstevens/",
+          //   label: "LinkedIn",
+          //   position: "right",
+          // },
         ],
       },
       footer: {
