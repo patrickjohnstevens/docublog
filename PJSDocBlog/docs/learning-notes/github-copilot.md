@@ -1,10 +1,15 @@
 ---
-sidebar_position: 1
+last_update:
+  date: 11/11/2022
+  author: Patrick John Stevens
+title: GitHub CoPilot Notes
+description: "Github Copilot Notes"
+keywords:
+  - Github Copilot subscription
 ---
+# GitHub CoPilot Notes
 
-# GitHub CoPilot
-
-## Why purchase GitHub Copilot
+## Why purchase GitHub Copilot?
 
 The main reason I purchased GitHub Copilot (GHCP) for the next 12 months (11/2022 - 11/2023) for $100 USD is to help with my learning journey. I tried it in the beta before it was paid but now I want to utilize it to speed up my learning process. I think it will also help me keep my focus on coding with my fingers on the keyboard instead of context switching over an over again by doing Google searches for the answers I expect GHCP to help me with. It also has an incredible feature that you are able to generate code suggestions from typing comments. Check out the details below.
 

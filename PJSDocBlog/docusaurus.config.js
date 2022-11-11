@@ -37,7 +37,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/patrickjohnstevens/docublog/tree/main/PJSDocBlog/docs",
+            "https://github.com/patrickjohnstevens/docublog/tree/main/PJSDocBlog",
         },
         // blog: {
         //   showReadingTime: true,
@@ -66,8 +66,8 @@ const config = {
           {
             type: "doc",
             docId: "overview",
-            position: "right",
-            label: "Knowledge Hub ",
+            position: "left",
+            label: "Knowledge Hub",
           },
           //{ to: "/blog", label: "Blog", position: "left" },
           // {
@@ -85,7 +85,7 @@ const config = {
             items: [
               {
                 label: "Docs",
-                to: "/docs/overview",
+                to: "/docs/about/overview",
               },
             ],
           },
