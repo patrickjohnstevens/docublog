@@ -1,10 +1,10 @@
 ---
-slug: about-this-site-and-about-me
-title: About This Site and About Me
+slug: about-this-site
+title: About This Site
 description: This site includes my public docs, portfolio, and published content. This primary purpose of this website is to help myself and other web developers to learn, build and publish teachable content to assist in the learning process while adding value and inspiring others to do the same.
 authors:
   - name: Patrick John Stevens
-    title: Web Developer learning, building, and publishing. I'm here to serve.
+    title: Web Developer learning, building, and teaching. I'm here to serve.
     url: https://github.com/patrickjohnstevens
     image_url: https://github.com/patrickjohnstevens.png
 tags: [starting]

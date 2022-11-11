@@ -81,7 +81,7 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Personal Knowledge Base",
             items: [
               {
                 label: "Docs",
@@ -90,32 +90,32 @@ const config = {
             ],
           },
           {
-            title: "Community",
+            title: "Social",
             items: [
               {
-                label: "Stack Overflow",
-                href: "#",
-              },
-              {
-                label: "Discord",
-                href: "#",
-              },
-              {
                 label: "Twitter",
-                href: "#",
+                href: "https://twitter.com/iPatrickStevens",
+              },
+              {
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/in/patrickjohnstevens/",
+              },
+              {
+                label: "YouTube",
+                href: "https://www.youtube.com/@patrickjohnstevens",
               },
             ],
           },
           {
-            title: "More",
+            title: "Code",
             items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
               {
                 label: "GitHub",
                 href: "https://github.com/patrickjohnstevens/docublog",
+              },
+              {
+                label: "CodePen",
+                href: "https://codepen.io/patrickjohnstevens",
               },
             ],
           },
