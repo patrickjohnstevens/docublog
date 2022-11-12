@@ -38,6 +38,8 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/patrickjohnstevens/docublog/tree/main/PJSDocBlog",
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         // blog: {
         //   showReadingTime: true,
@@ -76,6 +78,11 @@ const config = {
           //   position: "right",
           // },
         ],
+      },
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
       },
       footer: {
         style: "dark",
