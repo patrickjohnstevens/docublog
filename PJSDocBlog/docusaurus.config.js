@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Patrick John Stevens",
-  tagline: "Learn. Create. Teach.",
+  tagline: "Learn. Create. Publish.",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -34,20 +34,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/patrickjohnstevens/docublog/tree/main/PJSDocBlog",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
-        // blog: {
-        //   showReadingTime: true,
-        // Please change this to your repo.
-        // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     "#",
-        // },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -78,6 +69,11 @@ const config = {
           //   position: "right",
           // },
         ],
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
       },
       colorMode: {
         defaultMode: "dark",
