@@ -73,9 +73,9 @@ The locale dropdown now appears in your navbar:
 
 ![Locale Dropdown](./img/localeDropdown.png)
 
-## Build your localized site
+## Create your localized site
 
-Build your site for a specific locale:
+Create your site for a specific locale:
 
 ```bash
 npm run build -- --locale fr

@@ -4,17 +4,23 @@ import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: "Learn (in public)",
+    title: "Learn",
     Svg: require("@site/static/img/undraw_version_control.svg").default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        This website was inspired by the ideas of Learn In Public made popular
+        by{" "}
+        <a href="https://twitter.com/swyx" target="_blank">
+          @swyx
+        </a>{" "}
+        and many of the awesome developers and teachers across the world who
+        learn, create, teach, and publish content for others to learn and grow
+        from.
       </>
     ),
   },
   {
-    title: "Build",
+    title: "Create",
     Svg: require("@site/static/img/undraw_programming.svg").default,
     description: (
       <>

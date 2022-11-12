@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Patrick John Stevens",
-  tagline: "Learn. Build. Teach.",
+  tagline: "Learn. Create. Teach.",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -88,10 +88,14 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Personal Knowledge Base",
+            title: "Personal Knowledge Hub",
             items: [
               {
-                label: "Docs",
+                label: "Home",
+                to: "/",
+              },
+              {
+                label: "Overview",
                 to: "/docs/overview",
               },
             ],
@@ -127,7 +131,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} | Patrick John Stevens | Web Developer | Omaha, NE, USA | Learn. Build. Publish.`,
+        copyright: `Copyright © ${new Date().getFullYear()} | Patrick John Stevens | Web Developer | Omaha, NE, USA | Learn. Create. Publish.`,
       },
       prism: {
         theme: lightCodeTheme,
