@@ -58,7 +58,7 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "overview",
+            docId: "introduction",
             position: "left",
             label: "Knowledge Hub",
           },
@@ -91,8 +91,8 @@ const config = {
                 to: "/",
               },
               {
-                label: "Overview",
-                to: "/docs/overview",
+                label: "Knowledge Hub",
+                to: "/docs/introduction",
               },
             ],
           },
