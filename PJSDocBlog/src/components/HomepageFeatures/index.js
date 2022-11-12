@@ -4,12 +4,12 @@ import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: "Learn",
-    Svg: require("@site/static/img/undraw_version_control.svg").default,
+    title: "Learn In Public",
+    Svg: require("@site/static/img/undraw_developer_activity.svg").default,
     description: (
       <>
-        This website was inspired by the ideas of Learn In Public made popular
-        by{" "}
+        Learn In Public more specifically. This website was inspired by the
+        ideas of Learn In Public made popular by{" "}
         <a href="https://twitter.com/swyx" target="_blank">
           @swyx
         </a>{" "}
@@ -20,7 +20,7 @@ const FeatureList = [
     ),
   },
   {
-    title: "Create",
+    title: "Create and Innovate",
     Svg: require("@site/static/img/undraw_programming.svg").default,
     description: (
       <>
@@ -30,8 +30,8 @@ const FeatureList = [
     ),
   },
   {
-    title: "Teach",
-    Svg: require("@site/static/img/undraw_teaching.svg").default,
+    title: "Teach and Reach",
+    Svg: require("@site/static/img/undraw_youtube_tutorial.svg").default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
