@@ -38,8 +38,10 @@
     font-size: 1em;
   }
 }
+
 @media screen and (max-width: 400px) {
   .navbar__title {
     font-size: 0.75em;
   }
 }
+
