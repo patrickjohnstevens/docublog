@@ -84,7 +84,7 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Personal Knowledge Hub",
+            title: "Open Source Knowledge Hub",
             items: [
               {
                 label: "Home",
@@ -127,7 +127,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} | Patrick John Stevens | Web Developer | Omaha, NE, USA | Learn. Create. Publish.`,
+        copyright: `Copyright © ${new Date().getFullYear()} | Patrick John Stevens | Learner. Creator. Teacher. | Here To Serve | Omaha, NE, USA`,
       },
       prism: {
         theme: lightCodeTheme,
