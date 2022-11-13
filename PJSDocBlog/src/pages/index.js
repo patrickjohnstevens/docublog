@@ -33,7 +33,7 @@ export default function Home() {
     <Layout
       // title={`${siteConfig.title}`}
       //This seemed to duplicate the title in the tab.It would be once from here and then also what I had as the title in the docusaurus.config.js file.
-      description="This site includes my public docs, portfolio, and published content. This primary purpose of this website is to help myself and other web developers to learn, build and publish teachable content to assist in the learning process while adding value and inspiring others to do the same."
+      description="This site includes my public docs, portfolio, and published content. This primary purpose of this website is to help myself and other web developers to learn, create and teach in public to assist in the learning process while adding value and inspiring others to do the same."
     >
       <HomepageHeader />
       <main>
