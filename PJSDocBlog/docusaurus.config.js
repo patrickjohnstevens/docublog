@@ -94,6 +94,10 @@ const config = {
                 label: "Knowledge Hub",
                 to: "/docs/introduction",
               },
+              {
+                label: "Public Roadmap",
+                href: "https://github.com/users/patrickjohnstevens/projects/3",
+              },
             ],
           },
           {
@@ -127,7 +131,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} | Patrick John Stevens | Learner. Creator. Teacher. Developer. | Here To Serve | Omaha, NE, USA`,
+        copyright: `Copyright © ${new Date().getFullYear()} | Made with &#10084;&#65039; by Patrick John Stevens | Learner. Creator. Teacher. Developer. | Here To Serve | Omaha, NE, USA`,
       },
       prism: {
         theme: lightCodeTheme,

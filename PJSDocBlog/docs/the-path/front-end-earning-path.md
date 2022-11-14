@@ -18,11 +18,11 @@ Roadmap: <https://roadmap.sh/javascript>
 
 Roadmap: <https://roadmap.sh/typescript> (Not published yet)
 
-## React/Next/Remix/Solid/QwikCity
+## React/Next/Remix/Solid/Qwik
 
 Roadmap: <https://roadmap.sh/react>
 
-## SvelteKit
+## Svelte
 
 Roadmap:
 

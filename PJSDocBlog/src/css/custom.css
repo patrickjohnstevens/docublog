@@ -33,6 +33,18 @@
   font-size: 2.0em;
 }
 
+.footer {
+  background-color: var(--ifm-footer-background-color);
+}
+.footer__bottom {
+  border-top: 0.5px solid var(--ifm-color-emphasis-300);
+  padding-top: 1rem;
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #242526;
+}
+
 @media screen and (max-width: 450px) {
   .navbar__title {
     font-size: 1em;
