@@ -127,7 +127,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} | Patrick John Stevens | Learner. Creator. Teacher. | Here To Serve | Omaha, NE, USA`,
+        copyright: `Copyright © ${new Date().getFullYear()} | Patrick John Stevens | Learner. Creator. Teacher. Developer. | Here To Serve | Omaha, NE, USA`,
       },
       prism: {
         theme: lightCodeTheme,

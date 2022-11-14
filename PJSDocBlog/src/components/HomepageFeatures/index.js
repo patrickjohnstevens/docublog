@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 const FeatureList = [
   {
     title: "Learn In Public",
-    link: "/docs/about/about-this-site",
+    link: "/docs/about/learn-in-public",
     Svg: require("@site/static/img/undraw_programming.svg").default,
     description: (
       <>
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: "Create In Public",
-    link: "/docs/about/about-this-site",
+    link: "/docs/about/create-in-public",
     Svg: require("@site/static/img/undraw_maker_launch.svg").default,
     description: (
       <>
@@ -43,7 +43,7 @@ const FeatureList = [
   },
   {
     title: "Teach In Public",
-    link: "/docs/about/about-this-site",
+    link: "/docs/about/teach-in-public",
     Svg: require("@site/static/img/undraw_youtube_tutorial.svg").default,
     description: (
       <>
