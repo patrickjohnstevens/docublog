@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Patrick John Stevens",
   tagline: "Open Source Knowledge Hub",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://patrickjohnstevens.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
