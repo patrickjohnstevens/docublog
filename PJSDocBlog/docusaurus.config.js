@@ -37,7 +37,6 @@ const config = {
           editUrl:
             "https://github.com/patrickjohnstevens/docublog/tree/main/PJSDocBlog",
           showLastUpdateAuthor: true,
-          showLastUpdateTime: true,
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
