@@ -1,9 +1,11 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
+
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
+
 const config = {
   title: "Patrick John Stevens",
   tagline: "Open Source Knowledge Hub",
@@ -15,12 +17,14 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
+
   organizationName: "patrickjohnstevens", // Usually your GitHub org/user name.
   projectName: "patrickjohnstevens", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
+
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
@@ -116,7 +120,7 @@ const config = {
             ],
           },
           {
-            title: "Code",
+            title: "Code & Qualifications",
             items: [
               {
                 label: "GitHub",
@@ -125,6 +129,10 @@ const config = {
               {
                 label: "CodePen",
                 href: "https://codepen.io/patrickjohnstevens",
+              },
+              {
+                label: "Resume",
+                href: "/docs/about/patrick-john-stevens-resume",
               },
             ],
           },
