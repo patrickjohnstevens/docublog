@@ -148,7 +148,7 @@ const config = {
               },
               {
                 label: "Resume",
-                href: "/about/patrick-john-stevens-resume",
+                href: "/patrick-john-stevens-resume",
               },
             ],
           },

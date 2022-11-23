@@ -1,5 +1,6 @@
 {
-  "label": "How to",
+  "label": "Archives",
+  "position": 5,
   "link": {
     "type": "generated-index"
   }
