@@ -28,6 +28,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl:
             "https://github.com/patrickjohnstevens/docublog/tree/main/PJSDocBlog",
@@ -90,13 +91,13 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
-      // algolia: {
-      //   // Search only API key
-      //   apiKey: "651420d53bdf2d24b6719c6777dc69a4",
-      //   indexName: "codewars-docs",
-      //   appId: "2O5VWTLFC8",
-      //   contextualSearch: false,
-      // },
+      algolia: {
+        // Search only API key
+        apiKey: "a722d59a155a5f994928c60833817f76",
+        indexName: "pjs-docs",
+        appId: "560J0EESMA",
+        contextualSearch: false,
+      },
       footer: {
         style: "dark",
         links: [
