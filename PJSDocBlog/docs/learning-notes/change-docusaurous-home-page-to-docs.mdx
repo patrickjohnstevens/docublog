@@ -1,27 +1,101 @@
 ---
 title: Change Docusaurus Home Page To Docs
 last_update:
-  date: 11/11/2022
+  date: 11/23/2022
   author: Patrick John Stevens
-description: "Change Docusaurus home page to Docs with a code example"
+description: "Change Docusaurus home page to Docs with code examples"
 keywords:
   - docusaurus
+  - docs
+  - home page
+  - docs-only mode
+  - docusaurus.config.js
+  - docs routeBasePath
+tags:
+  [
+    docusaurus,
+    docs,
+    home page,
+    tutorial,
+    code example,
+    docs-only mode,
+    docusaurus.config.js,
+    docs routeBasePath,
+  ]
 ---
 
 # How to change the Docusaurus 2.0 Home Page / Landing Page to the Docs page
 
 ## Step 1 - Delete the index.js file in the pages folder
 
-## Step 2 - Add routeBasePath: "/" to docusaurus.config.js
+:::tip
 
-### Step 3 -
+Any time you delete files you want to ensure that you either have the file you are deleting saved somewhere else or that you have committed the changes to your git repository. This will ensure that you can always get the file back if you need it. It releaves a lot of anxiety when hacking and slashing on your project.
 
-## Code Example
+:::
+
+## Step - 2 - Set the root path in one of your markdown files
+
+You'll need to add the following to the top of the markdown file you want to be the root path.
+
+```md
+---
+slug: /
+---
+```
+
+:::note
+
+You will notice that the root path of ( " / " ) replaces ( " /docs/ ") in the URL. This is important to note if you've already added internal links on your site because they will need to be updated or it will cause build errors when you deploy your site.
+
+For example, you'll see this page make the following changes:
+
+- from: docs/learning-notes/change-docusaurous-home-page-to-docs
+- to: /learning-notes/change-docusaurous-home-page-to-docs
+
+The homepage will look like the following:
+
+- from: siteURL.com/docs
+- to: siteURL.com/ (But it will be the docs page you set the root path on)
+
+:::
+
+### Code Example
+
+Here is an example from this site:
+
+```mdx
+---
+title: Introduction
+description: "Introduction to Patrick John Stevens' personal-public knowledge hub"
+sidebar_position: 0
+authors:
+  - name: Patrick John Stevens
+  - title: Web Developer learning, creating, and teaching. I'm here to serve.
+  - url: https://github.com/patrickjohnstevens
+  - image_url: https://github.com/patrickjohnstevens.png
+last_update:
+  date: 11/23/2022
+  author: Patrick John Stevens
+keywords:
+  - Personal Knowledge Base
+  - Personal Knowledge Hub
+  - Public knowledge Hub
+  - Personal Knowledge Management
+  - Learn Create Publish
+  - Personal Knowledge Base Purpose
+  - Learn In Public
+slug: /
+---
+```
+
+## Step 3 - Add routeBasePath: "/" to docusaurus.config.js
+
+### Code Example
 
 See the file on GitHub [docusaurus.config.js](https://github.com/patrickjohnstevens/docublog/blob/main/PJSDocBlog/docusaurus.config.js). The specific code that goes under presets/docs is below.
 
-```js
-
+```javascript
 presets: [
     [
       "classic",
@@ -41,7 +115,12 @@ presets: [
           postsPerPage: 10,
           truncateMarker: /<!--\s*(truncate)\s*-->/,
         },
+      }),
+    ],
+  ],
 
 ```
 
-For full instructions directly from the source they are here: [Docusaurus 2.0 Docs](https://docusaurus.io/docs/docs-introduction#docs-only-mode).
+## Docusaurus Docs | Docs-Only Mode
+
+For full instructions directly from the source they are here: [Docusaurus 2.0 Docs](https://docusaurus.io/docs/docs-introduction#docs-only-mode)
