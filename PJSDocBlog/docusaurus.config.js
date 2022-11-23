@@ -148,7 +148,7 @@ const config = {
               },
               {
                 label: "Resume",
-                href: "/patrick-john-stevens-resume",
+                href: "https://drive.google.com/file/d/1rz5AZrbqEEYFV2mJqra4eyUJv2quitno/view?usp=share_link",
               },
             ],
           },
