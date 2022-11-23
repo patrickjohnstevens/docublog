@@ -8,14 +8,14 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 const config = {
   title: "Patrick John Stevens",
-  tagline: "Open Source Knowledge Hub",
+  tagline: "Docs Hub",
   url: "https://patrickjohnstevens.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/Patrick-John-Stevens_logo_lightbulb.svg",
-  organizationName: "patrickjohnstevens",
-  projectName: "patrickjohnstevens",
+  organizationName: "Patrick John Stevens",
+  projectName: "Docs Hub",
 
   i18n: {
     defaultLocale: "en",
@@ -56,13 +56,14 @@ const config = {
         logo: {
           alt: "Patrick John Stevens Lightbulb Logo",
           src: "img/Patrick-John-Stevens_logo_lightbulb.svg",
+          href: "/",
         },
         items: [
           {
             type: "doc",
             docId: "introduction",
             position: "left",
-            label: "Knowledge Hub",
+            label: "Docs Hub",
           },
           //{ to: "/blog", label: "Blog", position: "left" },
           // {
@@ -82,19 +83,26 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
+      // algolia: {
+      //   // Search only API key
+      //   apiKey: "651420d53bdf2d24b6719c6777dc69a4",
+      //   indexName: "codewars-docs",
+      //   appId: "2O5VWTLFC8",
+      //   contextualSearch: false,
+      // },
       footer: {
         style: "dark",
         links: [
           {
-            title: "Open Source Knowledge Hub",
+            title: "Docs Hub",
             items: [
               {
                 label: "Home",
                 to: "/",
               },
               {
-                label: "Knowledge Hub",
-                to: "/docs/introduction",
+                label: "Docs Hub",
+                to: "/docs/",
               },
               {
                 label: "Public Roadmap",
