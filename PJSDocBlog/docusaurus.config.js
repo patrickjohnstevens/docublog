@@ -106,7 +106,7 @@ const config = {
             items: [
               {
                 label: "Docs",
-                to: "/docs/",
+                to: "/",
               },
               {
                 label: "Blog",
@@ -148,7 +148,7 @@ const config = {
               },
               {
                 label: "Resume",
-                href: "/docs/about/patrick-john-stevens-resume",
+                href: "/about/patrick-john-stevens-resume",
               },
             ],
           },
