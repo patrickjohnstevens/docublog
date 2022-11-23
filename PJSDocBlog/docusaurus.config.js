@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 const config = {
   title: "Patrick John Stevens",
-  tagline: "Docs. Blog. ",
+  tagline: "Here To Serve",
   url: "https://docs.patrickjohnstevens.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -73,12 +73,11 @@ const config = {
             label: "Docs",
           },
 
-          { to: "/blog", label: "Blog", position: "left" },
-          // {
-          //   href: "https://www.linkedin.com/in/patrickjohnstevens/",
-          //   label: "LinkedIn",
-          //   position: "right",
-          // },
+          {
+            to: "/blog",
+            label: "Blog",
+            position: "left",
+          },
         ],
       },
       docs: {
@@ -105,12 +104,12 @@ const config = {
             title: "Docs Hub",
             items: [
               {
-                label: "Home",
-                to: "/",
-              },
-              {
                 label: "Docs",
                 to: "/docs/",
+              },
+              {
+                label: "Blog",
+                to: "/blog/",
               },
               {
                 label: "Public Roadmap",
