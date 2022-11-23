@@ -8,14 +8,14 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 const config = {
   title: "Patrick John Stevens",
-  tagline: "Docs Hub",
-  url: "https://patrickjohnstevens.com",
+  tagline: "Docs. Blog. ",
+  url: "https://docs.patrickjohnstevens.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/Patrick-John-Stevens_logo_lightbulb.svg",
   organizationName: "Patrick John Stevens",
-  projectName: "Docs Hub",
+  projectName: "docublog",
 
   i18n: {
     defaultLocale: "en",
@@ -32,6 +32,13 @@ const config = {
           editUrl:
             "https://github.com/patrickjohnstevens/docublog/tree/main/PJSDocBlog",
           showLastUpdateAuthor: true,
+        },
+        blog: {
+          showReadingTime: true,
+          editUrl:
+            "https://github.com/patrickjohnstevens/docublog/tree/main/PJSDocBlog",
+          postsPerPage: 10,
+          truncateMarker: /<!--\s*(truncate)\s*-->/,
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -63,9 +70,10 @@ const config = {
             type: "doc",
             docId: "introduction",
             position: "left",
-            label: "Docs Hub",
+            label: "Docs",
           },
-          //{ to: "/blog", label: "Blog", position: "left" },
+
+          { to: "/blog", label: "Blog", position: "left" },
           // {
           //   href: "https://www.linkedin.com/in/patrickjohnstevens/",
           //   label: "LinkedIn",
@@ -101,7 +109,7 @@ const config = {
                 to: "/",
               },
               {
-                label: "Docs Hub",
+                label: "Docs",
                 to: "/docs/",
               },
               {
