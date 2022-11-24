@@ -4,6 +4,19 @@
  * work well for content-centric websites.
  */
 
+ @font-face {
+   font-family: 'Hubot Sans';
+   src:
+     url('/static/fonts/Hubot-Sans.woff2') format('woff2 supports variations'),
+     url('/static/fonts/Hubot-Sans.woff2') format('woff2-variations');
+   font-weight: 200 900;
+   font-stretch: 75% 125%;
+ }
+
+ html {
+   font-family: 'Hubot Sans';
+ }
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #ffa900;
@@ -118,7 +131,7 @@
 }
 
 .DocSearch-Button {
-  background-color: #000!important;
+  background-color: #000;
 }
 
 .hero__subtitle {
@@ -148,4 +161,3 @@
     font-size: 0.75em;
   }
 }
-
