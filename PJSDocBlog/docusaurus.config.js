@@ -147,8 +147,8 @@ const config = {
                 href: "https://codepen.io/patrickjohnstevens",
               },
               {
-                label: "Resume",
-                href: "https://drive.google.com/file/d/1rz5AZrbqEEYFV2mJqra4eyUJv2quitno/view?usp=share_link",
+                label: "PDF Resume",
+                href: "https://drive.google.com/file/d/1C1Uo5JKnnZDJZeJBQMtc9QAkj3_MCAkg/view?usp=sharing",
               },
             ],
           },
