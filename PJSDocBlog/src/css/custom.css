@@ -30,7 +30,7 @@
 
  h1, h2, h3, h4, h5, h6 {
     font-family: 'Hubot Sans';
-    font-stretch: condensed;
+    font-stretch: semi-condensed;
  }
 
 /* You can override the default Infima variables here. */

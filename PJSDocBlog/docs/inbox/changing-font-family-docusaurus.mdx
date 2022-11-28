@@ -1,16 +1,20 @@
 ---
-title: Change The Font-Family in Docusaurus
-description: Learn how to change the font-family in Docusaurus.
+title: Change Font-Family in Docusaurus
+description: 5 simple steps to change the font-family in Docusaurus 2.0
 authors:
   - name: Patrick John Stevens
     title: Docusaurus Newb
     url: https://github.com/patrickjohnstevens
     image_url: https://github.com/patrickjohnstevens.png
+last_update:
+  date: 11/27/2022
+  author: Patrick John Stevens
 keywords:
   [
     font-family,
     font,
     font-face,
+    mono-sans,
     hubot-sans,
     docusaurus,
     documentation,
@@ -21,6 +25,7 @@ tags:
     font-family,
     font,
     font-face,
+    mono-sans,
     hubot-sans,
     docusaurus,
     documentation,
@@ -30,7 +35,7 @@ tags:
 
 # Change The Font-Family in Docusaurus
 
-## What's the Objective?
+## Why?
 
 I decided to change the fonts for two main reasons:
 
@@ -39,19 +44,19 @@ I decided to change the fonts for two main reasons:
 
 The objective of this doc is to change the font-family in Docusaurus from the default Docusaurus fonts to the [Hubot Sans & Mona Sans fonts](https://github.com/mona-sans).
 
-## The steps that were taken
+## The 5 Steps to Change the Font-Family in Docusaurus
 
 1. Download the Hubot Sans & Mona Sans fonts
 2. Create a new folder in the `static` folder called `fonts` and move the non-zipped fonts saved locally into the `fonts` folder
 3. Update the CSS to use the new fonts
-4. Add Head tags to preload the fonts (Learned from the Docusaurus 2 docs and Google searching)
-5. Test the site and make sure the fonts are working (Used the Chrome Dev Tools to check the fonts or download the CSS Peeper browser extension)
+4. Add Head tags to preload the fonts
+5. Test the site and make sure the fonts are working
 
-### Step 1
+### 1. Download Fonts
 
 Download the fonts here: [Hubot Sans & Mona Sans fonts](https://github.com/mona-sans)
 
-### Step 2
+### 2. Setup Folder and Files
 
 Look at the [GitHub code from this site](https://github.com/patrickjohnstevens/docublog/tree/main/PJSDocBlog/static/fonts) for an example of what the folder and file structure should look like
 
@@ -59,7 +64,7 @@ Here is a screenshot from my VS Code to give you a different visual:
 
 ![image of the fonts folder](/img/docusaurus-fonts-file-location.png)
 
-### Step 3
+### 3. Update CSS
 
 https://docusaurus.io/docs/static-assets#in-markdown
 
@@ -96,226 +101,51 @@ h6 {
 }
 ```
 
-### Step 4
+### 4. Add headTags
 
-There was a little more tricky than what I was used to when changing fonts in WordPress. I had to look at some real world examples and do a few experiments to get the fonts to work. I started with just one font and then added the second font once I got the first one working
+There was a little more tricky than what I was used to when changing fonts in WordPress. I had to look at some real world examples and do a few experiments to get the fonts to work. I started with just one font and then added the second font once I got the first one working.
 
-### What worked?
+Here is a link to the [GitHub code](https://github.com/patrickjohnstevens/docublog/blob/main/PJSDocBlog/docusaurus.config.js)
 
-### What didn't work?
-
-## What are the Take Away's?
-
-MDX is Markdown + JS (JSX more specifically). You can learn all the details here: [MDX](https://mdxjs.com/). It has an article that will show you how to use markdown, JSX, JavaScript expressions, and import and export statements in ESM inside MDX files within Docusaurus. You can import components, such as interactive charts or alerts, and embed them within your content. This makes writing long-form content with components a blast. 🚀
-
-:::tip tip callout section
-
-Create a Lightbulb Icon with Green Box Callout by adding the following to it's own line in your MDX file by adding ":::tip `any word or nothting`" to it's own line in your MDX file.
-
-:::
-
-:::tip DID YOU KNOW
-
-MDX alows you to use the power of React to create interactive blog posts.
-
-:::
-
-:::tip Check out this JSX within this callout and MDX file!
-
-This gives you the power of React and components to create interactive blog posts. All of this within the callout!
+#### Add headTags to docusaurus.config.js
 
 ```js
-<button onClick={() => alert("button clicked!")}>Click me!</button>
+
+const config = {
+  title: "Patrick John Stevens",
+  tagline: "Here To Serve",
+  url: "https://docs.patrickjohnstevens.com",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/Patrick-John-Stevens_logo_lightbulb.svg",
+  organizationName: "Patrick John Stevens",
+  projectName: "docublog",
+
+  headTags: [
+    {
+      tagName: "link",
+      attributes: {
+        rel: "preload",
+        href: "static/fonts/Hubot-Sans.woff2",
+        as: "font",
+        type: "font/woff2",
+        crossorigin: "anonymous",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "preload",
+        href: "static/fonts/Mono-Sans.woff2",
+        as: "font",
+        type: "font/woff2",
+        crossorigin: "anonymous",
+      },
+    },
+  ],
 ```
 
-<button onClick={() => alert("button clicked!")}>Click me!</button>
+### 5. Manual Testing
 
-:::
-
-:::danger warning callout option
-
-There is also this fire icon with a red box that can be used. It's pretty cool... or should I say HOT! Ha!
-
-:::
-
-:::note Callout with a Note Icon
-
-This is a note icon with a gray box. This is a great way to add a note to your content.
-
-:::
-
-:::caution Callout with a Caution Icon
-
-This is a caution icon with a dark orange box. This is a great way to add a caution to your content.
-
-:::
-
-:::info Callout with a Info Icon
-
-This is a info icon with a blue box. This is a great way to add a info to your content.
-
-:::
-
-### Markdown features also work with MDX
-
-<blockquote>
-  <p>
-    A blockquote with <em>some</em>emphasis.
-  </p>
-</blockquote>
-
-## Markdown Headings (H2)
-
-# H1 Info
-
-This is a Heading 1. This H1 does not rank above the meta title that is auto added to the left and right sidebar in rank 1.
-
-### H3 Info
-
-This is a Heading 3. This H3 creates a title and link in order of the other H1 and H2's on the right sidebar. H3 also indents it slightly. This helps from a visual and accessibility standpoing.
-
-#### H4 - Does nothing except decrease to the associated css font size.
-
-##### H5 - Does nothing except decrease to the associated css font size.
-
-###### H6 - Does nothing except decrease to the associated css font size.
-
-H4, H5, and H6 headings do not show up in the right sidebar, but they do follow their associated styling and help with symantic markdown.
-
-## Lists
-
-- Unordered
-- List
-
-1. Ordered
-2. List
-
-## Horizontal Line
-
----
-
-A horizontal line can be created by using 3 consequitive dashes. Here is an example "---". This example is above this paragraph and below it.
-
----
-
-## Code Blocks
-
-### JS - Copy to Clipboard
-
-```js
-const copyToClipboard = (text) => navigator.clipboard.writeText(text);
-
-copyToClipboard("This Sring is Copied To Clipboard.");
-```
-
-### JS - Scroll to Page Top
-
-```js
-const goToTop = () => window.scrollTo(0, 0);
-
-goToTop();
-```
-
-### JS - Detect Dark Mode
-
-```js
-const isDarkMode =
-  window.matchMedia &&
-  window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-console.log(isDarkMode); // Result: True or False
-```
-
-### HTML - Hello World
-
-```html
-<main>
-  <article>Hello World</article>
-</main>
-```
-
-### CSS - Style Change
-
-```css
-.cssStyleChange {
-  font-size: 1.5em;
-}
-```
-
-## JSX
-
-<a href="https://reactjs.org/docs/introducing-jsx.html" target="_blank">
-  JSX
-</a> is an extension to JavaScript that looks like HTML but makes it convenient to
-use components (reusable things). JSX is typically combined with a frontend framework
-like React, Preact, or Vue. These frameworks add support for components, which let
-you change repeating things like the following markup:
-
-```jsx
-<Welcome name="Venus" />
-<Welcome name="Mars" />
-```
-
-JSX is good for components. It makes repeating things more clear and allows for separation of concerns. MDX supports JSX syntax. The following looks a lot like HTML:
-
-```jsx md
-<h1>Heading!</h1>
-
-<abbr title="HyperText Markup Language">HTML</abbr> is a lovely language.
-
-<section>And here is *markdown* in **JSX**!</section>
-```
-
-```jsx md
-<MyComponent id="123" />
-
-You can also use objects with components, such as the `thisOne` component on
-the `myComponents` object: <myComponents.thisOne />
-
-<Component
-  open
-  x={1}
-  label={"this is a string, _not_ markdown!"}
-  icon={<Icon />}
-/>
-```
-
-## JS Expressions
-
-MDX also supports JavaScript expressions inside curly braces:
-
-```jsx md
-Two 🍰 is: {Math.PI \* 2}
-```
-
-Expressions can contain whole JavaScript programs as long as that they’re (wrapped in) an expression that evaluates to something that can be rendered. You can use an IIFE like so:
-
-```jsx md
-{
-  (function () {
-    const guess = Math.random();
-
-    if (guess > 0.66) {
-      return <span style={{ color: "tomato" }}>Look at us.</span>;
-    }
-
-    if (guess > 0.33) {
-      return <span style={{ color: "violet" }}>Who would have guessed?!</span>;
-    }
-
-    return <span style={{ color: "goldenrod" }}>Not me.</span>;
-  })();
-}
-```
-
-Expressions can be empty or contain just a comment:
-
-```jsx md
-{
-  /* A comment! */
-}
-```
-
-### Using MDX
-
-To learn more about using MDX, read the <a href="https://mdxjs.com/docs/using-mdx/" target="_blank">MDX docs</a>. It will cover using MDX with props, components, layouts and more.
+I used the Chrome Dev Tools to check out the fonts as well as the CSS Peeper browser extension.
