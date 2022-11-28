@@ -28,15 +28,77 @@ tags:
   ]
 ---
 
-# Draft - Change The Font-Family in Docusaurus
+# Change The Font-Family in Docusaurus
 
 ## What's the Objective?
 
-## What's the Plan?
+I decided to change the fonts for two main reasons:
 
-## How to Change the Font-Family in Docusaurus
+1. I wanted to make my site seem a little different than the default Docusaurus font
+2. I wanted to learn how to change the font-family in Docusaurus
 
-## Review
+The objective of this doc is to change the font-family in Docusaurus from the default Docusaurus fonts to the [Hubot Sans & Mona Sans fonts](https://github.com/mona-sans).
+
+## The steps that were taken
+
+1. Download the Hubot Sans & Mona Sans fonts
+2. Create a new folder in the `static` folder called `fonts` and move the non-zipped fonts saved locally into the `fonts` folder
+3. Update the CSS to use the new fonts
+4. Add Head tags to preload the fonts (Learned from the Docusaurus 2 docs and Google searching)
+5. Test the site and make sure the fonts are working (Used the Chrome Dev Tools to check the fonts or download the CSS Peeper browser extension)
+
+### Step 1
+
+Download the fonts here: [Hubot Sans & Mona Sans fonts](https://github.com/mona-sans)
+
+### Step 2
+
+Look at the [GitHub code from this site](https://github.com/patrickjohnstevens/docublog/tree/main/PJSDocBlog/static/fonts) for an example of what the folder and file structure should look like
+
+Here is a screenshot from my VS Code to give you a different visual:
+
+![image of the fonts folder](/img/docusaurus-fonts-file-location.png)
+
+### Step 3
+
+https://docusaurus.io/docs/static-assets#in-markdown
+
+Here is a link to the [GitHub code](https://github.com/patrickjohnstevens/docublog/blob/main/PJSDocBlog/src/css/custom.css)
+
+```css @font-face
+@font-face {
+  font-family: "Hubot Sans";
+  src: url("/static/fonts/Hubot-Sans.woff2") format("woff2 supports variations"),
+    url("/static/fonts/Hubot-Sans.woff2") format("woff2-variations");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+@font-face {
+  font-family: "Mona Sans";
+  src: url("/static/fonts/Mona-Sans.woff2") format("woff2 supports variations"),
+    url("/static/fonts/Mona-Sans.woff2") format("woff2-variations");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+html {
+  font-family: "Mona Sans";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Hubot Sans";
+}
+```
+
+### Step 4
+
+There was a little more tricky than what I was used to when changing fonts in WordPress. I had to look at some real world examples and do a few experiments to get the fonts to work. I started with just one font and then added the second font once I got the first one working
 
 ### What worked?
 

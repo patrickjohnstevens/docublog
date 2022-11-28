@@ -28,6 +28,16 @@ const config = {
         crossorigin: "anonymous",
       },
     },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "preload",
+        href: "static/fonts/Mono-Sans.woff2",
+        as: "font",
+        type: "font/woff2",
+        crossorigin: "anonymous",
+      },
+    },
   ],
 
   i18n: {
@@ -104,13 +114,13 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
-      algolia: {
-        // Search only API key
-        apiKey: "a722d59a155a5f994928c60833817f76",
-        indexName: "pjs-docs",
-        appId: "560J0EESMA",
-        contextualSearch: false,
-      },
+      // algolia: {
+      //   // Search only API key
+      //   apiKey: "a722d59a155a5f994928c60833817f76",
+      //   indexName: "pjs-docs",
+      //   appId: "560J0EESMA",
+      //   contextualSearch: false,
+      // },
       footer: {
         style: "dark",
         links: [
@@ -166,7 +176,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} | Made with &#10084;&#65039; by Patrick John Stevens | Learner. Creator. Teacher. Developer. | Here To Serve | Omaha, NE, USA`,
+        copyright: `Copyright © ${new Date().getFullYear()} | Made with &#10084;&#65039; by &#128161; Patrick John Stevens | Learner. Creator. Teacher. Developer. | Here To Serve | Omaha, NE, USA`,
       },
       prism: {
         theme: lightCodeTheme,
