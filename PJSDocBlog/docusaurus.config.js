@@ -9,7 +9,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Patrick John Stevens",
   tagline: "Here To Serve",
-  url: "https://docs.patrickjohnstevens.com",
+  url: "https://patrickjohnstevens.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -182,6 +182,7 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      image: "img/Patrick-John-Stevens-Bitmoji-Website-Social-Card.jpg",
     }),
 };
 
