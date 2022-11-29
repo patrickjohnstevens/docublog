@@ -1,0 +1,81 @@
+---
+title: Adding a social card to your docusaurous site
+description: 5 simple steps to change the font-family in Docusaurus 2.0
+authors:
+  - name: Patrick John Stevens
+    title: Docusaurus Newb
+    url: https://github.com/patrickjohnstevens
+    image_url: https://github.com/patrickjohnstevens.png
+last_update:
+  date: 11/29/2022
+  author: Patrick John Stevens
+keywords:
+  [
+    social-card,
+    image,
+    social-sharing-image,
+    canva,
+    design,
+    branding,
+    docusaurus,
+    documentation,
+    tutorial,
+  ]
+tags:
+  [
+    social-card,
+    image,
+    social-sharing-image,
+    canva,
+    design,
+    branding,
+    docusaurus,
+    documentation,
+    tutorial,
+  ]
+---
+
+# Adding A Social Card To Docusaurus
+
+## The Problem
+
+When I shared the link to your Docusaurus site on iPhone Messenger, the link preview didn't even show an image. It did contain the title of the primary doc page on my site. This didn't look great and doesn't really convey a message of professionalism about your work. I knew this is something that could be changed but I didn't know what the actual term for that image was.
+
+## The Solution
+
+What I did doesn't have to be exactly what you do but it will at least give you a good start. It seems like most solutions for Docusarus websites can be found in the documentation, other posts on Google, or in this case, looking at the source code of the main Docusaurus site. It really breaks down into creating a social-card image and then adding it to your docusaurus.config.js file.
+
+## 4 Simple Steps
+
+### Step 1 - Use Canva To Create Social Card
+
+First I needed an image that I wanted to show up. I lacked the inital inspiration so I went to [Canva.com](https://www.canva.com/). I ended up using the free service to create a social card. I used the default 16.9 dimensions from the presentations template. I used the same colors that I used on my. They didn't have the fonts I used so I went with the default.
+
+I liked the look but I wanted to add something a little more fun and personal so I added a little Bitmoji Icon of myself on a laptop.
+
+I choose to the jpg over a png because it's going to be used socially.
+
+I the photo by using the website [Tiny PNG](https://tinypng.com/) to reduce the file size. It's not a huge deal but it's a good practice to reduce the file size of images and other assets that get loaded on your pages.
+
+Here it is:
+![Social Card](img/Patrick-John-Stevens-Bitmoji-Website-Social-Card.jpg)
+
+### Step 2 - Add Social Card In Img Folder
+
+Next, you'll add the image to your image folder. The img folder is located within your static folder.
+
+Here is the file location on this site: https://github.com/patrickjohnstevens/docublog/blob/main/PJSDocBlog/static/img/Patrick-John-Stevens-Bitmoji-Website-Social-Card.jpg
+
+### Step 3 - Add the image to your docusaurus.config.js file
+
+Here is the code for the image in the docusaurus.config.js file:
+
+```js
+  themeConfig: {
+    image: "img/Patrick-John-Stevens-Bitmoji-Website-Social-Card.jpg",
+  },
+```
+
+#### Step 4 - Update Your Production Deployment
+
+For me, I use Vercel and they make this effortless. I commit and sync my changes to my GitHub repo and Vercel auto builds and redeploys the site. It's beautiful! Oh... and it's free for sites like this that won't get much traffic!
