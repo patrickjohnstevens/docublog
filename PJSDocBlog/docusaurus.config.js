@@ -58,10 +58,11 @@ const config = {
           showLastUpdateAuthor: true,
         },
         blog: {
+          blogSidebarTitle: "All our posts",
           showReadingTime: true,
           editUrl:
             "https://github.com/patrickjohnstevens/docublog/tree/main/PJSDocBlog",
-          postsPerPage: 10,
+          postsPerPage: 5,
           truncateMarker: /<!--\s*(truncate)\s*-->/,
         },
         theme: {

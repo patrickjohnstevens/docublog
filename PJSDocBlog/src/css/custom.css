@@ -24,21 +24,6 @@
   font-stretch: 75% 125%;
 }
 
- html {
-    font-family: 'Mona Sans';
- }
-
- h1, h2, h3, h4, h5, h6 {
-    font-family: 'Hubot Sans';
-    font-stretch: semi-condensed;
-    text-shadow: 1px 1px 2px #000, 0 0 1em #fff, 0 0 0.2em #fff;
- }
-
- p img {
-    box-shadow: #fff 0px 0px 10px;
-    border-radius: 10px;
- }
-
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #ffa900;
@@ -170,6 +155,26 @@
 
 .footer--dark {
   --ifm-footer-background-color: #242526;
+}
+
+html {
+  font-family: 'Mona Sans';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Hubot Sans';
+  font-stretch: semi-condensed;
+  text-shadow: 1px 1px 2px #000, 0 0 1em #fff, 0 0 0.2em #fff;
+}
+
+p img {
+  box-shadow: #fff 0px 0px 10px;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 450px) {
