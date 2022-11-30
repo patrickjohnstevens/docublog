@@ -1,5 +1,7 @@
 # README
 
+![PJS DocuBlog ReadME Social Card](/PJSDocBlog/static/img/Patrick-John-Stevens-Bitmoji-Website-Social-Card.jpg)
+
 This is built using Docusaurus 2.0. This site contains the public docs, portfolio, links, and published content for myself, Patrick John Stevens.
 
 ## About Me
