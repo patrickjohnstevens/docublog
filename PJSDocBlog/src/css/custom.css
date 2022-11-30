@@ -31,7 +31,12 @@
  h1, h2, h3, h4, h5, h6 {
     font-family: 'Hubot Sans';
     font-stretch: semi-condensed;
-    text-shadow: 1px 1px 2px #000, 0 0 1em #ffa900, 0 0 0.2em #ffa900;
+    text-shadow: 1px 1px 2px #000, 0 0 1em #fff, 0 0 0.2em #fff;
+ }
+
+ p img {
+    box-shadow: #fff 0px 0px 10px;
+    border-radius: 10px;
  }
 
 /* You can override the default Infima variables here. */
