@@ -172,7 +172,7 @@ const config = {
               },
               {
                 label: "Replit",
-                hreg: "https://replit.com/@iPatrickStevens",
+                href: "https://replit.com/@iPatrickStevens",
               },
               {
                 label: "PDF Resume",
