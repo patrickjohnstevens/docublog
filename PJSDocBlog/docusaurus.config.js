@@ -171,6 +171,10 @@ const config = {
                 href: "https://codepen.io/patrickjohnstevens",
               },
               {
+                label: "Replit",
+                hreg: "https://replit.com/@iPatrickStevens",
+              },
+              {
                 label: "PDF Resume",
                 href: "https://drive.google.com/file/d/1C1Uo5JKnnZDJZeJBQMtc9QAkj3_MCAkg/view?usp=sharing",
               },
