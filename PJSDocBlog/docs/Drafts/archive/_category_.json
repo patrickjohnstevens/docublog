@@ -1,0 +1,10 @@
+{
+  "label": "Archived Drafts & Docs",
+  "position": 1,
+  "collapsible": true,
+  "collapsed": true,
+  "className": "archive-sidebar",
+  "link": {
+    "type": "generated-index"
+  }
+}

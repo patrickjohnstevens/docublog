@@ -1,0 +1,10 @@
+{
+  "label": "Working Drafts",
+  "position": 0,
+  "collapsible": true,
+  "collapsed": false,
+  "className": "working-draft-sidebar",
+  "link": {
+    "type": "generated-index"
+  }
+}
