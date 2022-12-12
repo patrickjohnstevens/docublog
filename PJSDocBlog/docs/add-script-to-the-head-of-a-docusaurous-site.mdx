@@ -1,0 +1,50 @@
+---
+title: How to add a script to the Head of your docusaurus website
+description: "Tutorial on how to add a script to the Head of your docusaurus site, specifcally a falling snowflakes script"
+authors:
+  - name: Patrick John Stevens
+  - title: Web Developer learning, creating, and teaching. I'm here to serve.
+  - url: https://github.com/patrickjohnstevens
+  - image_url: https://github.com/patrickjohnstevens.png
+last_update:
+  date: 12/12/2022
+  author: Patrick John Stevens
+keywords:
+  [
+    keywords separated by commas and surrounded by brackets,
+    e.g. javascript,
+    react,
+    node,
+  ]
+tags:
+  [
+    tags separated by commas and surrounded by brackets,
+    e.g. javascript,
+    react,
+    node,
+  ]
+---
+
+# How to add a script to the Head of your docusaurus site
+
+It's important to know how to add scripts to the Head of your website. This is where you will typically find your site presets, accessabitliy, head tags, and other scripts. This tutorial will show you how to add a script to the Head of your docusaurus site, specifcally a falling snowflakes script. You can find the docs for how to do this [here](https://docusaurus.io/docs/api/docusaurus-config#scripts).
+
+## Summary
+
+### Example 1: Snow Falling Effect
+
+I came across https://embed.im/snow/ on Twitter and thought it would be a fun way to add some Christmas cheer to my site. It was posted by [@JoshWComeau](https://twitter.com/JoshWComeau). He's a good follow. [Here is the tweet](https://twitter.com/JoshWComeau/status/1602401245385396250?s=20&t=Lghz2dqIPL5GUyBl0BU0cA). Below you'll find a simple script that you can add to your docusaurus site to add a falling snow effect to your site.
+
+Copy and add this code to the docusaurus.config.js file. Specifically within the const config = { } object.
+
+```js
+scripts: [
+  // String format.
+  "https://docusaurus.io/script.js",
+  // Object format.
+  {
+    src: "https://app.embed.im/snow.js",
+    defer: true,
+  },
+],
+```

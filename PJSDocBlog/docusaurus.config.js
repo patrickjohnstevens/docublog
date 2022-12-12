@@ -17,6 +17,16 @@ const config = {
   organizationName: "Patrick John Stevens",
   projectName: "docublog",
 
+  scripts: [
+    // String format.
+    "https://docusaurus.io/script.js",
+    // Object format.
+    {
+      src: "https://app.embed.im/snow.js",
+      defer: true,
+    },
+  ],
+
   headTags: [
     {
       tagName: "link",
