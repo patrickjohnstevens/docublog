@@ -1,0 +1,128 @@
+---
+title: Just JavaScript | My Notes
+description: My notes on the Just JavaScript learning experience by Dan Abramov
+sidebar_position: 0
+authors:
+  - name: Patrick John Stevens
+  - title: Web Developer learning, creating, and teaching. I'm here to serve.
+  - url: https://github.com/patrickjohnstevens
+  - image_url: https://github.com/patrickjohnstevens.png
+last_update:
+  date: 12/11/2022
+  author: Patrick John Stevens
+keywords:
+  [Just JavaScript, javascript, vanilla javascript, vanilla js book notes]
+tags: [Just JavaScript, javascript, vanilla javascript, vanilla js book notes]
+---
+
+# Just JavaScript | My Notes
+
+**Explore the JavaScript Universe** | Rebuild your mental model from the inside out
+
+## Overview
+
+Below are my notes on the Just JavaScript learning experience by Dan Abramov.
+
+The created the first season of Just JavaScript of 10 chapters or episodes.
+
+The beginning establishes the mental model they teach throughout the course.
+
+This specfic coding mental model isn't scoped only to Just JavaScript. They believe it will serve as your basis for development you do for the rest of your career.
+
+Here are JavaScript's primary features:
+
+- Mental Models
+- The JavaScript Universe
+- Values and Variables
+- Studying from the Inside
+- Meeting the Primitive Values
+- Meeting Objects and Functions
+- Equality of Values
+- Properties
+- Mutation
+- Prototypes
+
+The key idea is that almost anybody can change the way they understand programming, and if they can do that they can change the trajectory of their coding career.
+
+:::note Callout with a Note Icon
+
+Check out the [Just JavaScript website](https://justjavascript.com/). It's a great resource for learning JavaScript and they offer a free preview!
+
+:::
+
+## Notes
+
+    • The foundation of our mental model is values.
+    • Each value belongs to a type. Primitive values are immutable.
+    • We can point to values using “wires” we call variables.
+    • We cant create primitive values. They all already exist and we cant reach them or change them and will always exist. We can only summon primitive values.
+    • We can create non-primitive values like objects, arrays (which are objects) and functions.
+    • JavaScript is a garbage-collected language. We cant destroy objects but they might eventually disappear if there is no way to reach it by the following the wires to variables from our code.
+    • In our mental model, objects and functions are closest to us and reminds us that we can reach them and change them. I like to think of objects and functions as satellite dishes and think of primitive values and types as distant stars we can never reach or change.
+    • In our mental model, all values are separate from our code. Thus, with functions viewed as values, they are not part of our code.
+    • Expressions are questions that seek an answer.
+    • Functions are values. We can point variables to them, just like we can do with numbers or objects.
+    • Primitive values (strings, numbers, etc...), which we encountered in the first part of our tour, have always existed in our universe. For example, writing 2 or "hello" always “summons” the same number or a string value.
+    • We cant create a new string or a new number, we can only “summon” that value.
+    • Objects and functions behave differently and allow us to generate our own values.
+    • Writing {} or function() {} always creates a brand new, different value. This idea is crucial to understanding equality in JavaScript,
+    • What makes objects different is that we can create more of them. Every time we use the {} object literal, we create a brand new object value.
+    • This also means that by default, they're mutable (we can change them). We can access their properties with . (dot notation) or [ ] (bracket notation).
+    • Generally speaking, if you can do something to an object, you can also do that to a function too. They are very special objects.
+    • Objects are values
+    • Functions are values.
+    • Function calls are known as a call expression. To “answer” a call expression, JavaScript runs the code inside our function, and hands us the returned value as the result.
+    • If you dont have a clear mental model of equality in JavaScript, youre never quite sure if you're dealing with the same value, or with two different values. As a result, you'll often make mistakes—like changing a value you didn't intend to change.
+    • If (NaN === NaN) returns false… the reverse (NaN !== NaN) must return true.
+    • Importantly, properties don't contain values—they point to them! Remember that our universe is full of wires. Some of them start from our code (variables), and others start from objects (properties). All wires always point to values.
+    • Dot notation is a form of asking JavaScript something, also called an expression. So, when we ask JS what variable_name.property_key, JS will point to the value of the Key:Value pair. The colon is like a wire/pointer. This is what "reading a property" looks like.
+    • One important thing to keep in mind when naming a property is that a single object can't have two properties with the same name. For example, our object can't have two properties called age.
+    • Properties are also case-sensitive. Be careful with this. In a single object, Age and age would be two different properties.
+    • JavaScript simplified rules with objects and dot notation:
+        ○ Figure out the value of the part before the dot ( . ).
+        ○ If that value is null or undefined, throw an error immediately.
+        ○ Check whether a property with that name exists on our object:
+            § If it exists, answer the value this property points to.
+            § If it doesnt exist, answer with the undefined value.
+    • Fundamentally, it's because every expression needs to result in some value, or throw an error. Some other languages throw an error if you access a property that doesn't exist—but JavaScript is not one of them!
+    • Look & understand at this example when there are multuiple uses of dot notation on the same variable:
+        ○ let sherlock = { surname: Holmes, age: 64 };
+        console.log(sherlock.boat); // undefined
+        ○ let sherlock = { surname: Holmes, age: 64 };
+        console.log(sherlock.boat.name); // Uncaught TypeError: Cannot read properties of undefined (name)
+    • Why did the name property that is after the boat property cause a TypeError? JavaScript is following the rules.
+        ○ The answer is that calculating sherlock.boat.name throws an error:
+            § We need to first figure out the value of sherlock.boat.
+                □ To do that, we need to figure out the value of sherlock.
+                    ® The sherlock variable points to an object.
+                    ® Therefore, the value of sherlock is that object.
+                □ An object is not null or undefined, so we keep going.
+                □ That object does not have a boat property.
+            § Therefore, the value of sherlock.boat is undefined.
+            § We've got undefined on the left side of the dot (.).
+            § The rules say that null or undefined on the left side is an error.
+    • letcaptain= Jim; letship= { captain: captain}; captain= Naomi; // Naomi
+    • ship.captain // Jim
+    • Objects might appear “nested” in code, but in our universe, each object is completely separate. An object cannot be “inside” of another object!
+    • Our mental model of JavaScript doesnt have nested objects. Each object is separate from another object. NO NESTED OBJECTS!
+    • Properties ALWAYS point to values!
+    • Remember: a property ALWAYS points to a value! It CANT point to another property or another variable. All wires in our mental model point to values.
+    • Be extra cautious that you dont change/mutate an object elsewhere in the program.
+    • Example of mutating/changing an object that you didnt truly intend to change:
+
+    • This is why the intuition of objects being “nested” is so wrong! It makes us forget that there may be many objects pointing to the object we changed.
+    • Ideally, you would want to avoid mutating shared data.
+    • One way to solve this would be to avoid mutating shared data.
+        ○ Instead of this: john.address.city = Malibu; (Which does the above image… which mutates/changes the city property of the object that john.address points to. Because john.addresss and sherlock.address point to the same object, we unintentionally mutated shared data.
+        ○ Change Johns address (and not Sherlocks) by doing john.address = { city: Malibu }; Doing it this way, we are mutating the address property of the object that john points to. This only mutates the object representing Johns data.
+
+    • Another way to solve this is to reassign the john variable to point to a new version of Johns data.
+        ○ John = { surname: "Lennon"; address: "Malibu" }
+    •
+    • You might notice there's now an “abandoned” old version of the John object on our diagram. We don't need to worry about it. JavaScript will eventually automatically remove it from memory if there are no wires pointing to it. https://justjavascript.com/learn/09-mutation>
+    • Sherlock Holmes once said, “When you have eliminated the impossible, whatever remains, however improbable, must be the truth.”
+        ○ As your mental model becomes more complete, you will find it easier to debug problems because you will know what possible causes to look for. #Debugging
+        ○ Your mental model gives you a starting point from which you can investigate bugs. This works the other way around too. Sometimes, you can tell a piece of code is not the source of a problem—because the mental model proves it!
+    • const prevents variable reassignment—not object mutation.
+    • There is a school of thought that mutation is best contained to a very narrow layer of your application. The benefit, according to this philosophy, is that your program's behavior is more predictable. The downside is that you write more code to “pass things around” and avoid mutation.
+    • When we read a property that doesn't exist on our object, we'll keep looking for it on the prototype chain. If we don't find it, we get undefined. But when we write a property that doesn't exist on our object, that creates the property on our object. Generally speaking, prototypes will not play a role.
