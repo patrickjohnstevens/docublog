@@ -1,0 +1,51 @@
+---
+title: SvelteKit | Notes
+description: My notes and thoughts about SvelteKit 1.0
+authors:
+  - name: Patrick John Stevens
+  - title: Web Developer learning, creating, publishing, and teaching. I'm here to serve.
+  - url: https://github.com/patrickjohnstevens
+  - image_url: https://github.com/patrickjohnstevens.png
+last_update:
+  date: 12/11/2022
+  author: Patrick John Stevens
+keywords:
+  [
+    SvelteKit 1.0 Notes,
+    SvelteKit 1.0,
+    SvelteKit,
+    Svelte,
+    Vite,
+    SvelteKit TypeScript,
+    SvelteKit JavaScript,
+    levelup.video,
+    swyx,
+    scott tolinski,
+  ]
+tags: [SvelteKit, Svelte, Vite, TypeScript, JavaScript]
+---
+
+# My notes and thoughts about SvelteKit 1.0
+
+The two people who influenced me the most to learn SvelteKit is [Scott Tolinski](https://twitter.com/stolinski) and [swyx](https://twitter.com/swyx). Follow and learn from them! They are both amazing teachers and developers.
+
+## LevelUp Video Course: [SvelteKit 1.0](https://levelup.video/tutorials/sveltekit/) Notes
+
+It's free to watch the videos for free. To access the downloads/code, you need to pay for the course.
+
+## Getting Started
+
+- Set up 1.0 with the skeleton option, vite, TypeScript, and Playwrite for unit and full E2E testing. I chose not to use Vitetest because Playwrite can do both and I've heard good things about it.
+
+## Exploring the Demo
+
+- Something I didn't know, is he mentions to not put anything in the 'static' folder that you don't want other people to see because they are publically available.
+- Most time working on SvelteKit projects will be spent in the 'src' folder.
+
+## Our Project and First Route
+
+- Create a new folder within the routes folder (e.g. 'about')
+- Create a new file within the new folder and name it with a + symbol in the front. The + symbol signifies in SvelteKit that it is a page or a layout and also makes it dynamic. (e.g. '+about.svelte')
+- So far, this is all server side rendered (SSR) and is not a single page application (SPA). This is because the page is rendered on the server and then sent to the client. The client then takes over and renders the page on the client side. This is the default behavior of SvelteKit. You can change this behavior to be a SPA by adding the 'hydrate: true' option to the export statement in the new file. (e.g. `export let hydrate = true;`)
+
+## Layouts
