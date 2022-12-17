@@ -125,13 +125,13 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
-      // algolia: {
-      //   // Search only API key
-      //   apiKey: "a722d59a155a5f994928c60833817f76",
-      //   indexName: "pjs-docs",
-      //   appId: "560J0EESMA",
-      //   contextualSearch: false,
-      // },
+      algolia: {
+      // Search only API key
+      apiKey: "a722d59a155a5f994928c60833817f76",
+      indexName: "pjs-docs",
+      appId: "560J0EESMA",
+      contextualSearch: false,
+      },
       footer: {
         style: "dark",
         links: [
