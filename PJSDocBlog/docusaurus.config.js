@@ -126,11 +126,12 @@ const config = {
         respectPrefersColorScheme: true,
       },
       algolia: {
-      // Search only API key
-      apiKey: "a722d59a155a5f994928c60833817f76",
-      indexName: "pjs-docs",
-      appId: "560J0EESMA",
-      contextualSearch: false,
+        // Search only API key
+        apiKey: "6d97ae2834e039fdbd3e556671a6d3dd",
+        indexName: "patrickjohnstevens",
+        appId: "U0QCG2L83F",
+        contextualSearch: false,
+        debug: false,
       },
       footer: {
         style: "dark",
