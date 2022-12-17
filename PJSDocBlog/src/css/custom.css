@@ -140,6 +140,18 @@
 .DocSearch-Button {
   background-color: #000;
 }
+#Layer_1>path:nth-child(2),
+#Layer_1>rect, #Layer_1>path:nth-child(4),
+#Layer_1>path:nth-child(5),
+#Layer_1>path:nth-child(6),
+#Layer_1>path:nth-child(7),
+#Layer_1>path:nth-child(8),
+#Layer_1>path:nth-child(9),
+#Layer_1>path.cls-1 {
+  fill: #ffa900;
+}
+
+
 
 .hero__subtitle {
   font-size: 2.0em;
