@@ -17,14 +17,16 @@ const config = {
   organizationName: "Patrick John Stevens",
   projectName: "docublog",
 
+  // General scripts and head tags
   scripts: [
-    // String format.
-    "https://docusaurus.io/script.js",
-    // Object format.
-    {
-      src: "https://app.embed.im/snow.js",
-      defer: true,
-    },
+    // Snow.js script for Christmas season. See https://app.embed.im/
+    // // String format.
+    // "https://docusaurus.io/script.js",
+    // // Object format.
+    // {
+    //   src: "https://app.embed.im/snow.js",
+    //   defer: true,
+    // },
   ],
 
   headTags: [
