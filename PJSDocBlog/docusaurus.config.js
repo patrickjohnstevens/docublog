@@ -189,7 +189,11 @@ const config = {
               },
               {
                 label: "PDF Resume",
-                href: "https://drive.google.com/file/d/1C1Uo5JKnnZDJZeJBQMtc9QAkj3_MCAkg/view?usp=sharing",
+                href: "https://drive.google.com/file/d/1exo8HwHtR2KoVHMb6LJxxk7B-9SFbmpJ/view?usp=sharing",
+              },
+              {
+                label: "MDX Resume",
+                href: "/patrick-john-stevens-resume",
               },
             ],
           },
