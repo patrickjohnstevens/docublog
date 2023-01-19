@@ -125,7 +125,7 @@ const config = {
       colorMode: {
         defaultMode: "dark",
         disableSwitch: false,
-        respectPrefersColorScheme: true,
+        respectPrefersColorScheme: false,
       },
       algolia: {
         // Search only API key
@@ -149,27 +149,27 @@ const config = {
                 label: "Blog",
                 to: "/blog/",
               },
-              {
-                label: "Public Roadmap",
-                href: "https://github.com/users/patrickjohnstevens/projects/3",
-              },
+              // {
+              //   label: "Public Roadmap",
+              //   href: "https://github.com/users/patrickjohnstevens/projects/3",
+              // },
             ],
           },
           {
             title: "Social",
             items: [
-              {
-                label: "Twitter",
-                href: "https://twitter.com/iPatrickStevens",
-              },
+              // {
+              //   label: "Twitter",
+              //   href: "https://twitter.com/iPatrickStevens",
+              // },
               {
                 label: "LinkedIn",
                 href: "https://www.linkedin.com/in/patrickjohnstevens/",
               },
-              {
-                label: "YouTube",
-                href: "https://www.youtube.com/@patrickjohnstevens",
-              },
+              // {
+              //   label: "YouTube",
+              //   href: "https://www.youtube.com/@patrickjohnstevens",
+              // },
             ],
           },
           {
@@ -179,22 +179,22 @@ const config = {
                 label: "GitHub",
                 href: "https://github.com/patrickjohnstevens/docublog",
               },
-              {
-                label: "CodePen",
-                href: "https://codepen.io/patrickjohnstevens",
-              },
-              {
-                label: "Replit",
-                href: "https://replit.com/@iPatrickStevens",
-              },
+              // {
+              //   label: "CodePen",
+              //   href: "https://codepen.io/patrickjohnstevens",
+              // },
+              // {
+              //   label: "Replit",
+              //   href: "https://replit.com/@iPatrickStevens",
+              // },
               {
                 label: "PDF Resume",
                 href: "https://drive.google.com/file/d/1exo8HwHtR2KoVHMb6LJxxk7B-9SFbmpJ/view?usp=sharing",
               },
-              {
-                label: "MDX Resume",
-                href: "/patrick-john-stevens-resume",
-              },
+              // {
+              //   label: "MDX Resume",
+              //   href: "/patrick-john-stevens-resume",
+              // },
             ],
           },
         ],
