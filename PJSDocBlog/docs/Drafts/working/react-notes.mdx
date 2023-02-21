@@ -732,3 +732,7 @@ Keeping the Markdown features on Docusaurous link handy: https://docusaurus.io/d
   This is HTML and it should render like the rest of the MDX/MD text because
   that gets converted to HTML anyways.
 </p>
+
+## Random Notes, Thoughts, and Ideas
+
+- Use React Suspense to load the data for the page. This will allow the page to load faster and then the data will load in after the page is loaded. This is a good way to improve the user experience. The technique is simple, you wrap your component under Suspense. The Suspense accepts a fallback component to display until the component data is fetched. The fallback component is rendered as long as the Promise is not resolved.
