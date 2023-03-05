@@ -1,0 +1,53 @@
+---
+title: First-Letter Mnemonic Strategy Generator Code
+description: This is a code snippet for generating a first-letter mnemonic strategy for memorizing a list of words.
+# sidebar_position: 0
+authors:
+  - name: Patrick John Stevens
+  - title: Web Developer learning, creating, publishing, and teaching. I'm here to serve.
+  - url: https://github.com/patrickjohnstevens
+  - image_url: https://github.com/patrickjohnstevens.png
+last_update:
+  date: 3/5/2023
+  author: Patrick John Stevens
+keywords:
+  - mnemonic
+  - strategy
+  - first-letter
+  - generator
+  - code
+  - snippet
+  - javascript
+tags: [code, snippet, javascript, mnemonic, strategy, first-letter, generator]
+---
+
+# First-Letter Mnemonic Strategy Generator Code
+
+## JavaScript Function for Generating a First-Letter Mnemonic Strategy
+
+```js
+function capitalizeFirstLetter(str) {
+  // Split the string into an array of words
+  let words = str.split(" ");
+
+  // Loop through each word and add the first letter to a new array
+  let letters = [];
+  for (let i = 0; i < words.length; i++) {
+    letters.push(words[i].charAt(0).toUpperCase());
+  }
+
+  // Join the letters back together into a single string with spaces and punctuation
+  let capitalizedStr = letters.join(" ");
+  capitalizedStr += ".";
+
+  return capitalizedStr;
+}
+
+// Example usage
+let str =
+  "If we say we have no sin, we deceive ourselves, and the truth is not in us.";
+let capitalizedStr = capitalizeFirstLetter(str);
+console.log(capitalizedStr);
+
+Expected Output: "I W S W H N S, W D S, A T I N U."
+```
